@@ -1,82 +1,85 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/features/AddContact.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/features/AddDeposit.feature");
 formatter.feature({
   "line": 1,
-  "name": "TechFios\u0027s users are able to fillout the Addcontact form.",
+  "name": "As a user I want to Add Deposit.",
   "description": "",
-  "id": "techfios\u0027s-users-are-able-to-fillout-the-addcontact-form.",
+  "id": "as-a-user-i-want-to-add-deposit.",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 11230484500,
+  "duration": 11392705700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 7479996899,
   "status": "passed"
 });
 formatter.scenario({
   "line": 2,
-  "name": "Users can fill out the Addcontact form",
+  "name": "user would be able to do Deposit.",
   "description": "",
-  "id": "techfios\u0027s-users-are-able-to-fillout-the-addcontact-form.;users-can-fill-out-the-addcontact-form",
+  "id": "as-a-user-i-want-to-add-deposit.;user-would-be-able-to-do-deposit.",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
   "line": 3,
-  "name": "a internal user",
+  "name": "a user with valid credentials",
   "keyword": "Given "
 });
 formatter.step({
   "line": 4,
-  "name": "user navigate to CRM -\u003e AddContact page",
+  "name": "user navigate to Transaction -\u003e New Deposit",
   "keyword": "When "
 });
 formatter.step({
   "line": 5,
-  "name": "AddContact page should display",
+  "name": "New Deposit page should display",
   "keyword": "Then "
 });
 formatter.step({
   "line": 6,
-  "name": "user fill the form",
+  "name": "user submit New Deposit form",
   "keyword": "When "
 });
 formatter.step({
   "line": 7,
-  "name": "success message should display",
+  "name": "success Msg should display",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AddContactSteps.user_already_on_login_page()"
+  "location": "AddDepositSteps.a_user_with_valid_credentials()"
 });
 formatter.result({
-  "duration": 3478201200,
+  "duration": 8126030500,
   "status": "passed"
 });
 formatter.match({
-  "location": "AddContactSteps.user_navigate_to_CRM_AddContact_page()"
+  "location": "AddDepositSteps.user_navigate_to_Transaction_New_Deposit()"
 });
 formatter.result({
-  "duration": 1086048000,
+  "duration": 1791919000,
   "status": "passed"
 });
 formatter.match({
-  "location": "AddContactSteps.addcontact_page_should_display()"
+  "location": "AddDepositSteps.new_Deposit_page_should_display()"
 });
 formatter.result({
-  "duration": 80302300,
+  "duration": 85666100,
   "status": "passed"
 });
 formatter.match({
-  "location": "AddContactSteps.user_fill_the_form()"
+  "location": "AddDepositSteps.user_submit_New_Deposit_form()"
 });
 formatter.result({
-  "duration": 1719659100,
+  "duration": 3107705600,
   "status": "passed"
 });
 formatter.match({
-  "location": "AddContactSteps.success_message_should_display()"
+  "location": "AddDepositSteps.success_Msg_should_display()"
 });
 formatter.result({
-  "duration": 6376880600,
-  "error_message": "java.lang.NullPointerException\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:560)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)\r\n\tat page.AddContactPage.isSuccessMsgDisplay(AddContactPage.java:104)\r\n\tat steps.AddContactSteps.success_message_should_display(AddContactSteps.java:70)\r\n\tat ✽.Then success message should display(src/test/java/features/AddContact.feature:7)\r\n",
-  "status": "failed"
+  "duration": 3403364701,
+  "status": "passed"
 });
 });
